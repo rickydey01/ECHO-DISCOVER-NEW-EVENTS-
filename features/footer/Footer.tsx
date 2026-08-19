@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { ArrowUp, ArrowUpRight, Sparkles, Check, Send, MapPin } from "lucide-react";
 import { activeHubsData, footerLinksData } from "./footer.data";
 import { useBooking } from "../../context/BookingContext";
+import { assetUrl } from "../../utils/assetHelper";
 import "./footer.css";
 
 export default function Footer() {
@@ -50,7 +51,7 @@ export default function Footer() {
       time: "08:00 PM",
       venue: "Echo Arena Main Hall",
       city: "Guwahati, Assam",
-      image: "/images/events/event1.webp",
+      image: assetUrl("/images/events/event1.webp"),
       basePrice: 899,
     });
   };

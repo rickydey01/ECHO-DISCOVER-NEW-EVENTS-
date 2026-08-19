@@ -2,6 +2,16 @@ import { NextResponse } from "next/server";
 import { BookingService } from "../../../server/services/bookingService";
 import type { BookingCheckoutRequest } from "../../../server/types/server.types";
 
+export const dynamic = "force-static";
+
+export async function GET() {
+  return NextResponse.json({
+    success: true,
+    message: "Booking service operational",
+    timestamp: new Date().toISOString(),
+  });
+}
+
 export async function POST(req: Request) {
   try {
     const body: BookingCheckoutRequest = await req.json();

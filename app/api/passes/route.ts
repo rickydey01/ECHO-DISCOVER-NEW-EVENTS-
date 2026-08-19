@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { EventService } from "../../../server/services/eventService";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   try {
     const passes = await EventService.getUpcomingPassEvents();

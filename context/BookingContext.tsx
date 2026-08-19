@@ -2,6 +2,7 @@
 
 import React, { createContext, useContext, useState, useCallback, ReactNode } from "react";
 import type { TicketPass, BookingDetails, UserProfile } from "../types/booking.types";
+import { assetUrl } from "../utils/assetHelper";
 
 export * from "../types/booking.types";
 
@@ -12,7 +13,7 @@ const DEFAULT_BOOKING: BookingDetails = {
   time: "08:00 PM",
   venue: "Echo Arena Main Hall",
   city: "Guwahati, Assam",
-  image: "/images/events/event1.webp",
+  image: assetUrl("/images/events/event1.webp"),
   basePrice: 899,
   initialTier: "GA",
 };
@@ -27,7 +28,7 @@ const INITIAL_USER_PASSES: TicketPass[] = [
     time: "08:00 PM",
     venue: "Echo Arena Main Hall",
     city: "Guwahati, Assam",
-    image: "/images/events/event1.webp",
+    image: assetUrl("/images/events/event1.webp"),
     tierName: "VIP Mezzanine Pass",
     quantity: 2,
     totalPaid: 3956,
@@ -44,7 +45,7 @@ const INITIAL_USER_PASSES: TicketPass[] = [
     time: "07:30 PM",
     venue: "The Dome Amphitheatre",
     city: "Guwahati, Assam",
-    image: "/images/events/event3.webp",
+    image: assetUrl("/images/events/event3.webp"),
     tierName: "General Admission",
     quantity: 1,
     totalPaid: 1199,
@@ -60,7 +61,7 @@ const DEFAULT_PROFILE: UserProfile = {
   phone: "+91 98640 12345",
   membership: "ECHO BLACK // VIP CITIZEN",
   city: "Guwahati, Assam",
-  avatar: "/images/hero/hero1.webp",
+  avatar: assetUrl("/images/hero/hero1.webp"),
   points: 2450,
 };
 

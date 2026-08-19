@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { Volume2, VolumeX, Menu, Ticket } from "lucide-react";
 import { soundEngine } from "../../utils/audioSynthesizer";
 import { useBooking } from "../../context/BookingContext";
+import { assetUrl } from "../../utils/assetHelper";
 import MobileMenu from "./MobileMenu";
 import "./navigation.css";
 
@@ -93,7 +94,7 @@ export default function Navbar() {
               <div className="echo-story-ring">
                 <div className="echo-story-inner">
                   <img
-                    src={profile?.avatar || "/images/hero/hero1.webp"}
+                    src={profile?.avatar || assetUrl("/images/hero/hero1.webp")}
                     alt="User VIP Profile"
                     className="echo-story-avatar-img"
                   />

@@ -22,6 +22,7 @@ import {
 import { AnimatePresence, motion } from "motion/react";
 import { useBooking } from "../../context/BookingContext";
 import { soundEngine } from "../../utils/audioSynthesizer";
+import { assetUrl } from "../../utils/assetHelper";
 import "./booking.css";
 
 type BookingStep = "RESERVATION" | "PAYMENT" | "PROCESSING" | "CONFIRMED";
@@ -109,7 +110,7 @@ export default function TicketBookingModal() {
           time: booking.time,
           venue: booking.venue,
           city: booking.city,
-          image: booking.image || "/images/events/event1.webp",
+          image: booking.image || assetUrl("/images/events/event1.webp"),
           tierName: tierName,
           quantity: quantity,
           totalPaid: totalPrice,
@@ -200,7 +201,7 @@ export default function TicketBookingModal() {
                 <div className="echo-compact-event-header">
                   <div className="echo-compact-thumb-wrap">
                     <img
-                      src={booking.image || "/images/events/event1.webp"}
+                      src={booking.image || assetUrl("/images/events/event1.webp")}
                       alt={booking.title}
                       className="echo-compact-thumb"
                     />

@@ -1,5 +1,7 @@
 "use client";
 
+import { assetUrl } from "./assetHelper";
+
 class GlobalAudioEngine {
   private audio: HTMLAudioElement | null = null;
   private isPlaying = false;
@@ -14,7 +16,7 @@ class GlobalAudioEngine {
 
   private initAudio() {
     if (!this.audio && typeof window !== "undefined") {
-      this.audio = new Audio("/audio/echo_preview.wav");
+      this.audio = new Audio(assetUrl("/audio/echo_preview.wav"));
       this.audio.loop = true;
       this.audio.volume = 0.65;
       this.audio.preload = "auto";

@@ -1,4 +1,5 @@
 import type { HeroEvent } from "./hero.types";
+import { assetUrl } from "../../utils/assetHelper";
 
 export const heroEventsData: HeroEvent[] = [
   {
@@ -14,7 +15,7 @@ export const heroEventsData: HeroEvent[] = [
     location: "Dibrughar, Assam",
     city: "Dibrughar, Assam",
     price: "₹899",
-    image: "/images/hero/hero5.webp",
+    image: assetUrl("/images/hero/hero5.webp"),
     label: "LIVE SHOWCASE",
     soundPreviewName: "HYPERDRIVE LIVE MIX",
   },
@@ -31,7 +32,7 @@ export const heroEventsData: HeroEvent[] = [
     location: "Goa",
     city: "Goa, IN",
     price: "₹1,199",
-    image: "/images/hero/hero4.webp",
+    image: assetUrl("/images/hero/hero4.webp"),
     label: "SELLING FAST",
     soundPreviewName: "SOLAR TECHNO TRIP",
   },
@@ -48,7 +49,7 @@ export const heroEventsData: HeroEvent[] = [
     location: "Berlin",
     city: "Berlin, DE",
     price: "₹1,499",
-    image: "/images/events/event7.webp",
+    image: assetUrl("/images/events/event7.webp"),
     label: "EXCLUSIVE PASS",
     soundPreviewName: "ACID UNDERGROUND BEAT",
   },
@@ -65,7 +66,7 @@ export const heroEventsData: HeroEvent[] = [
     location: "Reykjavik",
     city: "Reykjavik, IS",
     price: "₹999",
-    image: "/images/events/event8.webp",
+    image: assetUrl("/images/events/event8.webp"),
     label: "LIMITED SEATS",
     soundPreviewName: "ASTRAL DRONE STREAM",
   },
@@ -82,7 +83,7 @@ export const heroEventsData: HeroEvent[] = [
     location: "London",
     city: "London, UK",
     price: "₹1,299",
-    image: "/images/events/event9.webp",
+    image: assetUrl("/images/events/event9.webp"),
     label: "NEW RELEASE",
     soundPreviewName: "QUANTUM BASS PULSE",
   },

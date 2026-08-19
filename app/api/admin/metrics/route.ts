@@ -1,6 +1,8 @@
 import { NextResponse } from "next/server";
 import { AdminService } from "../../../../server/services/adminService";
 
+export const dynamic = "force-static";
+
 export async function GET() {
   try {
     const metrics = await AdminService.getExecutiveMetrics();

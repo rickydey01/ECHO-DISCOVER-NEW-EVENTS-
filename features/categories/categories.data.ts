@@ -1,3 +1,5 @@
+import { assetUrl } from "../../utils/assetHelper";
+
 export interface CategoryNavTab {
   id: string;
   name: string;
@@ -64,7 +66,7 @@ export const curatedCategoryEvents: CategoryEvent[] = [
     place: "Guwahati",
     venue: "Echo Arena Main Hall",
     price: "₹899",
-    image: "/images/events/event15.webp",
+    image: assetUrl("/images/events/event15.webp"),
     tag: "LIVE MUSIC",
   },
   {
@@ -78,7 +80,7 @@ export const curatedCategoryEvents: CategoryEvent[] = [
     place: "Shillong",
     venue: "Skyline Underground Club",
     price: "₹699",
-    image: "/images/events/event2.webp",
+    image: assetUrl("/images/events/event2.webp"),
     tag: "CLUB NIGHT",
   },
   {
@@ -92,7 +94,7 @@ export const curatedCategoryEvents: CategoryEvent[] = [
     place: "Jorhat",
     venue: "Tea Garden Amphitheatre",
     price: "₹1,499",
-    image: "/images/events/event17.webp",
+    image: assetUrl("/images/events/event17.webp"),
     tag: "OPEN AIR",
   },
 ];

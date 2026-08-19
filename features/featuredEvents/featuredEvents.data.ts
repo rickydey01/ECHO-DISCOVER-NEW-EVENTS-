@@ -1,4 +1,5 @@
 import type { FeaturedEvent } from "./featuredEvents.types";
+import { assetUrl } from "../../utils/assetHelper";
 
 export const featuredEventsData: FeaturedEvent[] = [
   {
@@ -13,7 +14,7 @@ export const featuredEventsData: FeaturedEvent[] = [
     venue: "Echo Arena Main Hall",
     location: "Guwahati, Assam",
     price: "₹899",
-    image: "/images/events/event19.webp",
+    image: assetUrl("/images/events/event19.webp"),
     status: "selling_fast",
     lineup: ["Tale of Us", "Amelie Lens", "Boris Brejcha", "Rebūke", "ANNA"],
   },
@@ -29,7 +30,7 @@ export const featuredEventsData: FeaturedEvent[] = [
     venue: "Skyline Underground",
     location: "Shillong, Meghalaya",
     price: "₹1,199",
-    image: "/images/events/event11.webp",
+    image: assetUrl("/images/events/event11.webp"),
     status: "live",
     lineup: ["Carl Cox", "Solomun", "Charlotte de Witte", "Mind Against", "KAS:ST"],
   },
@@ -45,7 +46,7 @@ export const featuredEventsData: FeaturedEvent[] = [
     venue: "Tea Garden Amphitheatre",
     location: "Jorhat, Assam",
     price: "₹1,499",
-    image: "/images/events/event3.webp",
+    image: assetUrl("/images/events/event3.webp"),
     status: "selling_fast",
     lineup: ["Richie Hawtin", "Dax J", "Paula Temple", "I Hate Models", "Kobosil"],
   },
@@ -61,7 +62,7 @@ export const featuredEventsData: FeaturedEvent[] = [
     venue: "Pulse Warehouse",
     location: "Dibrugarh, Assam",
     price: "₹999",
-    image: "/images/events/event21.webp",
+    image: assetUrl("/images/events/event21.webp"),
     status: "upcoming",
     lineup: ["Max Richter", "Nils Frahm", "Kiasmos", "Ólafur Arnalds", "Jon Hopkins"],
   },
@@ -77,12 +78,11 @@ export const featuredEventsData: FeaturedEvent[] = [
     venue: "Pragjyoti Cultural Center",
     location: "Guwahati, Assam",
     price: "₹1,299",
-    image: "/images/events/event18.webp",
+    image: assetUrl("/images/events/event18.webp"),
     status: "selling_fast",
     lineup: ["Noisia", "Pendulum", "Chase & Status", "Sub Focus", "Camo & Krooked"],
   },
-
-    {
+  {
     id: 6,
     title: "FLIM SESSION",
     category: "CINEMATIC & VISUAL ARTS",
@@ -94,7 +94,7 @@ export const featuredEventsData: FeaturedEvent[] = [
     venue: "Pragjyoti Cultural Center",
     location: "Guwahati, Assam",
     price: "₹1,299",
-    image: "/images/events/event23.webp",
+    image: assetUrl("/images/events/event23.webp"),
     status: "selling_fast",
     lineup: ["Noisia", "Pendulum", "Chase & Status", "Sub Focus", "Camo & Krooked"],
   },

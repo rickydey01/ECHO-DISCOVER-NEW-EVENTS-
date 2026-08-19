@@ -1,4 +1,5 @@
 import type { GalleryItem } from "./gallery.types";
+import { assetUrl } from "../../utils/assetHelper";
 
 export const galleryRowsData: GalleryItem[][] = [
   // Stream 1 (Moves Left)
@@ -10,7 +11,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Guwahati",
       date: "OCT 2025",
       attendees: "2,400+",
-      image: "/images/events/event13.webp",
+      image: assetUrl("/images/events/event13.webp"),
     },
     {
       id: "g-02",
@@ -19,7 +20,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Shillong",
       date: "NOV 2025",
       attendees: "1,200+",
-      image: "/images/events/event14.webp",
+      image: assetUrl("/images/events/event14.webp"),
     },
     {
       id: "g-03",
@@ -28,7 +29,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Jorhat",
       date: "DEC 2025",
       attendees: "1,800+",
-      image: "/images/events/event15.webp",
+      image: assetUrl("/images/events/event15.webp"),
     },
     {
       id: "g-04",
@@ -37,7 +38,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Guwahati",
       date: "JAN 2026",
       attendees: "3,500+",
-      image: "/images/events/event16.webp",
+      image: assetUrl("/images/events/event16.webp"),
     },
   ],
   // Stream 2 (Moves Right - Fast)
@@ -49,7 +50,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Dibrugarh",
       date: "FEB 2026",
       attendees: "1,600+",
-      image: "/images/events/event17.webp",
+      image: assetUrl("/images/events/event17.webp"),
     },
     {
       id: "g-06",
@@ -58,7 +59,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Guwahati",
       date: "MAR 2026",
       attendees: "2,100+",
-      image: "/images/events/event18.webp",
+      image: assetUrl("/images/events/event18.webp"),
     },
     {
       id: "g-07",
@@ -67,7 +68,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Shillong",
       date: "APR 2026",
       attendees: "2,800+",
-      image: "/images/events/event19.webp",
+      image: assetUrl("/images/events/event19.webp"),
     },
     {
       id: "g-08",
@@ -76,7 +77,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Jorhat",
       date: "MAY 2026",
       attendees: "1,400+",
-      image: "/images/events/event20.webp",
+      image: assetUrl("/images/events/event20.webp"),
     },
   ],
   // Stream 3 (Moves Left - Ambient)
@@ -88,7 +89,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Guwahati",
       date: "JUN 2026",
       attendees: "900 VIPs",
-      image: "/images/events/event21.webp",
+      image: assetUrl("/images/events/event21.webp"),
     },
     {
       id: "g-10",
@@ -97,7 +98,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Shillong",
       date: "JUL 2026",
       attendees: "3,100+",
-      image: "/images/events/event22.webp",
+      image: assetUrl("/images/events/event22.webp"),
     },
     {
       id: "g-11",
@@ -106,7 +107,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Dibrugarh",
       date: "AUG 2026",
       attendees: "1,500+",
-      image: "/images/events/event23.webp",
+      image: assetUrl("/images/events/event23.webp"),
     },
     {
       id: "g-12",
@@ -115,7 +116,7 @@ export const galleryRowsData: GalleryItem[][] = [
       location: "Guwahati",
       date: "AUG 2026",
       attendees: "5,000+",
-      image: "/images/events/event24.webp",
+      image: assetUrl("/images/events/event24.webp"),
     },
   ],
 ];

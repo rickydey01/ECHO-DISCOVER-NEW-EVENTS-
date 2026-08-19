@@ -1,3 +1,5 @@
+import { assetUrl } from "../../utils/assetHelper";
+
 export interface PassTier {
   name: string;
   price: number;
@@ -44,7 +46,7 @@ export const upcomingEventsData: UpcomingPassEvent[] = [
     city: "Paris",
     venue: "Skyline Underground",
     coordinates: "26.1445° N, 91.7362° E",
-    image: "/images/events/event20.webp",
+    image: assetUrl("/images/events/event20.webp"),
     description: "A subterranean odyssey of melodic techno and analog visual synths beneath the cityscape.",
     price: "From ₹499",
     basePrice: 499,
@@ -72,7 +74,7 @@ export const upcomingEventsData: UpcomingPassEvent[] = [
     city: "Sivasagar",
     venue: "Historic Ruins Pavilion",
     coordinates: "26.9826° N, 94.6425° E",
-    image: "/images/events/event12.webp",
+    image: assetUrl("/images/events/event12.webp"),
     description: "An exclusive evening of networking, keynote talks, and immersive tech showcases for business leaders and innovators.",
     price: "From ₹399",
     basePrice: 399,
@@ -100,7 +102,7 @@ export const upcomingEventsData: UpcomingPassEvent[] = [
     city: "Jorhat",
     venue: "The Velvet Loft",
     coordinates: "26.7509° N, 94.2037° E",
-    image: "/images/events/event13.webp",
+    image: assetUrl("/images/events/event13.webp"),
     description: "Unplugged acoustic tapestries, soul vocals, and intimate late-night storytelling.",
     price: "From ₹599",
     basePrice: 599,
@@ -128,7 +130,7 @@ export const upcomingEventsData: UpcomingPassEvent[] = [
     city: "Guwahati",
     venue: "Riverview Tiered Gardens",
     coordinates: "26.1859° N, 91.7478° E",
-    image: "/images/events/event14.webp",
+    image: assetUrl("/images/events/event14.webp"),
     description: "A live TED X experience featuring visionary speakers, interactive Q&A sessions, and immersive idea showcases.",
     price: "From ₹699",
     basePrice: 699,
@@ -156,7 +158,7 @@ export const upcomingEventsData: UpcomingPassEvent[] = [
     city: "Guwahati",
     venue: "Bass Vault 01",
     coordinates: "26.1284° N, 91.8012° E",
-    image: "/images/events/event15.webp",
+    image: assetUrl("/images/events/event15.webp"),
     description: "Lose yourself in a room engineered with Funktion-One acoustic clarity and hyper-precise lasers.",
     price: "From ₹799",
     basePrice: 799,
@@ -184,7 +186,7 @@ export const upcomingEventsData: UpcomingPassEvent[] = [
     city: "Jorhat",
     venue: "The Old Mill Courtyard",
     coordinates: "26.7465° N, 94.2154° E",
-    image: "/images/events/event16.webp",
+    image: assetUrl("/images/events/event16.webp"),
     description: "A collaborative festival celebrating Northeast creators, culinary pop-ups, and indie sounds.",
     price: "From ₹299",
     basePrice: 299,

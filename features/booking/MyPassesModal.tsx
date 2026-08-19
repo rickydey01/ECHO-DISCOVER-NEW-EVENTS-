@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import { AnimatePresence, motion } from "motion/react";
 import { useBooking } from "../../context/BookingContext";
+import { assetUrl } from "../../utils/assetHelper";
 import "./booking.css";
 
 export default function MyPassesModal() {
@@ -56,7 +57,7 @@ export default function MyPassesModal() {
       time: "08:00 PM",
       venue: "Echo Arena Main Hall",
       city: "Guwahati, Assam",
-      image: "/images/events/event1.webp",
+      image: assetUrl("/images/events/event1.webp"),
       basePrice: 899,
     });
   };

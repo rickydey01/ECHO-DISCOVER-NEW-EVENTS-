@@ -2,6 +2,7 @@
 
 import { Home, Compass, Ticket } from "lucide-react";
 import { useBooking } from "../../context/BookingContext";
+import { assetUrl } from "../../utils/assetHelper";
 
 export default function MobileAppDock() {
   const { openMyPasses, openUserProfile, passes, profile } = useBooking();
@@ -40,7 +41,7 @@ export default function MobileAppDock() {
           <div className="echo-story-ring echo-story-ring-dock">
             <div className="echo-story-inner">
               <img
-                src={profile?.avatar || "/images/hero/hero1.webp"}
+                src={profile?.avatar || assetUrl("/images/hero/hero1.webp")}
                 alt="User VIP Profile"
                 className="echo-story-avatar-img"
               />
