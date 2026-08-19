@@ -1,0 +1,15 @@
+ECHO FINAL CLIENT DEMO — MOTION + PERFORMANCE MASTER
+
+Design language preserved from the original ECHO Home / Featured / Upcoming pages.
+Categories / Gallery / About / Footer use the V2 visual language.
+
+Final pass:
+- Lenis smooth scrolling
+- GSAP ScrollTrigger camera-style section choreography
+- Motion for lightweight category interactions
+- Gallery animation only runs while the gallery is near the viewport
+- Gallery uses fewer duplicated tracks and CSS-only transforms
+- Images converted from multi-megapixel JPGs to responsive-sized WebP assets
+- Category and gallery sections use containment/content-visibility
+- No duplicate GSAP transforms fighting the gallery marquee
+- Reduced-motion support

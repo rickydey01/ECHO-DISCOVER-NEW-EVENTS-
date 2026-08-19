@@ -1,0 +1,197 @@
+/* =========================================================
+   MANIFESTO & STORY SECTION
+   ========================================================= */
+
+.echo-manifesto-section {
+  position: relative;
+  width: 100%;
+  padding: clamp(100px, 14vw, 180px) 0;
+  background: linear-gradient(180deg, #07070a 0%, #0d0d12 100%);
+  overflow: hidden;
+  border-bottom: 1px solid var(--echo-border);
+}
+
+.echo-manifesto-drift {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  font-family: var(--font-display);
+  font-size: 32vw;
+  font-weight: 900;
+  letter-spacing: -0.1em;
+  line-height: 0.7;
+  color: rgba(255, 255, 255, 0.015);
+  pointer-events: none !important;
+  user-select: none;
+}
+
+.echo-manifesto-container {
+  position: relative;
+  z-index: 2;
+  padding-left: clamp(14px, 2.8vw, 36px);
+  padding-right: clamp(14px, 2.8vw, 36px);
+}
+
+.echo-manifesto-grid {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: center;
+}
+
+.echo-manifesto-title {
+  font-family: var(--font-display);
+  font-size: clamp(40px, 5.8vw, 84px);
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: -0.05em;
+  color: var(--echo-white);
+  margin-bottom: 24px;
+}
+
+.echo-manifesto-title em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: 400;
+  color: var(--echo-orange);
+  padding-right: 4px;
+}
+
+.echo-manifesto-lead {
+  font-size: clamp(16px, 1.8vw, 22px);
+  line-height: 1.5;
+  color: var(--echo-white);
+  font-weight: 500;
+  margin-bottom: 16px;
+}
+
+.echo-manifesto-p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--echo-muted);
+  margin-bottom: 30px;
+}
+
+.echo-manifesto-quote-box {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 20px;
+  border-radius: 14px;
+  background: rgba(255, 107, 53, 0.08);
+  border-left: 3px solid var(--echo-orange);
+}
+
+.echo-manifesto-quote-box blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: var(--echo-white);
+  line-height: 1.5;
+}
+
+.echo-stats-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.echo-stat-card {
+  padding: 22px 18px;
+  border-radius: 18px;
+  background: #0f0f15;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.echo-stat-card:hover {
+  transform: translateY(-3px);
+  border-color: rgba(255, 107, 53, 0.4);
+}
+
+.echo-stat-top {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.echo-stat-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--echo-muted);
+}
+
+.echo-stat-val {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3.2vw, 42px);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: var(--echo-orange);
+  line-height: 1;
+}
+
+.echo-stat-desc {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--echo-muted);
+}
+
+.echo-manifesto-stamp {
+  padding: 24px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, rgba(255, 107, 53, 0.15) 0%, rgba(99, 102, 241, 0.08) 100%);
+  border: 1px solid rgba(255, 107, 53, 0.3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.echo-manifesto-stamp span {
+  font-family: var(--font-display);
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  color: var(--echo-white);
+}
+
+.echo-manifesto-stamp em {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 34px;
+  color: var(--echo-orange);
+}
+
+.echo-manifesto-stamp small {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  color: var(--echo-muted);
+  margin-top: 6px;
+}
+
+@media (max-width: 1024px) {
+  .echo-manifesto-container {
+    padding-left: clamp(16px, 4vw, 32px);
+    padding-right: clamp(16px, 4vw, 32px);
+  }
+}
+
+@media (max-width: 960px) {
+  .echo-manifesto-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .echo-manifesto-container {
+    padding-left: 18px;
+    padding-right: 18px;
+  }
+}
