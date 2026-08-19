@@ -399,3 +399,228 @@
   background: var(--echo-orange);
   box-shadow: 0 0 12px var(--echo-orange);
 }
+
+/* =========================================================
+   RESPONSIVE HERO (TABLET & MOBILE)
+   ========================================================= */
+
+@media (max-width: 768px) {
+  .echo-hero {
+    min-height: 100svh;
+    padding-top: clamp(80px, 12vh, 100px);
+    padding-bottom: clamp(24px, 4.5vh, 40px);
+  }
+
+  .echo-hero__stage {
+    gap: 16px;
+    padding-left: clamp(16px, 4.5vw, 24px);
+    padding-right: clamp(16px, 4.5vw, 24px);
+  }
+
+  .echo-hero__telemetry {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .echo-hero__status-pill {
+    padding: 5px 12px;
+    font-size: 10px;
+    letter-spacing: 0.1em;
+  }
+
+  .echo-hero__sound-sweet-pill {
+    padding: 5px 12px;
+    gap: 8px;
+  }
+
+  .echo-sweet-music-meta {
+    font-size: 10px;
+  }
+
+  .echo-hero__kicker {
+    font-size: 11px;
+    letter-spacing: 0.14em;
+    margin-bottom: 8px;
+    gap: 6px;
+  }
+
+  .echo-hero__title {
+    font-size: clamp(32px, 8.5vw, 52px);
+    line-height: 0.94;
+    letter-spacing: -0.045em;
+    text-shadow: 0 6px 24px rgba(0, 0, 0, 0.7);
+  }
+
+  .echo-hero__tagline {
+    font-size: 13px;
+    line-height: 1.45;
+    color: rgba(240, 240, 245, 0.82);
+    margin-top: 8px;
+    max-width: 460px;
+  }
+
+  /* Compact Clean Info Row & CTA Button */
+  .echo-hero__dock-clean {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 2px 0;
+    margin-top: 4px;
+    width: 100%;
+  }
+
+  .echo-hero__meta-group {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    margin: 0;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .echo-hero__meta-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    min-width: 0;
+  }
+
+  .echo-hero__meta-item svg {
+    width: 12px;
+    height: 12px;
+    flex-shrink: 0;
+    margin-top: 2px;
+  }
+
+  .echo-hero__meta-item .echo-meta-dot {
+    width: 4.5px;
+    height: 4.5px;
+    flex-shrink: 0;
+    margin-top: 5px;
+  }
+
+  .echo-hero__meta-item small {
+    font-size: 8px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    color: var(--echo-muted);
+    margin-bottom: 1px;
+    line-height: 1.1;
+  }
+
+  .echo-hero__meta-item strong {
+    font-size: 11.5px;
+    font-weight: 600;
+    color: var(--echo-white);
+    line-height: 1.25;
+    white-space: normal;
+    word-break: break-word;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+
+  .echo-hero__actions {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 0;
+  }
+
+  .echo-hero__primary-btn {
+    padding: 9px 20px;
+    min-height: 44px;
+    border-radius: 999px;
+    box-shadow: 0 4px 14px rgba(255, 85, 32, 0.4);
+    border: 1px solid rgba(255, 255, 255, 0.35);
+  }
+
+  .echo-btn-content-centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1px;
+    line-height: 1.15;
+  }
+
+  .echo-btn-title {
+    font-size: 11.5px;
+    font-weight: 900;
+    letter-spacing: 0.06em;
+    line-height: 1.1;
+  }
+
+  .echo-btn-price {
+    font-size: 11px;
+    font-weight: 800;
+    line-height: 1.1;
+    color: #000000;
+  }
+
+  .echo-hero__pagination-center {
+    gap: 8px;
+    margin-top: 2px;
+  }
+
+  .echo-hero__dot-btn {
+    padding: 4px 0;
+  }
+
+  .echo-dot-bar {
+    width: 16px;
+    height: 2.5px;
+  }
+
+  .echo-hero__dot-btn.is-active .echo-dot-bar {
+    width: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .echo-hero__stage {
+    gap: 13px;
+    padding-left: clamp(14px, 4vw, 18px);
+    padding-right: clamp(14px, 4vw, 18px);
+  }
+
+  .echo-hero__title {
+    font-size: clamp(26px, 7.8vw, 36px);
+    line-height: 0.98;
+    letter-spacing: -0.04em;
+  }
+
+  .echo-hero__tagline {
+    font-size: 12px;
+    line-height: 1.4;
+    margin-top: 6px;
+  }
+
+  .echo-hero__dock-clean {
+    gap: 10px;
+  }
+
+  .echo-hero__meta-group {
+    gap: 5px;
+  }
+
+  .echo-hero__meta-item strong {
+    font-size: 10.5px;
+  }
+
+  .echo-hero__primary-btn {
+    padding: 8px 16px;
+    min-height: 40px;
+  }
+
+  .echo-btn-title {
+    font-size: 10.5px;
+    letter-spacing: 0.05em;
+  }
+
+  .echo-btn-price {
+    font-size: 10px;
+  }
+}
