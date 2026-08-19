@@ -13,6 +13,7 @@ import Footer from "../features/footer/Footer";
 import TicketBookingModal from "../features/booking/TicketBookingModal";
 import MyPassesModal from "../features/booking/MyPassesModal";
 import UserProfileModal from "../features/user/UserProfileModal";
+import GlobalSearchModal from "../features/search/GlobalSearchModal";
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
         {/* 2. Lenis Butterfly Spring Momentum Scroll Engine */}
         <SmoothExperience />
 
-        {/* 3. Floating Luxury Header Navigation (with My Passes & Profile) */}
+        {/* 3. Floating Luxury Header Navigation (with Search, My Passes & Profile) */}
         <Navbar />
 
         {/* 4. Section 01: Hero Stage Gateway (Free-floating clean info row & bold CTA) */}
@@ -59,6 +60,9 @@ export default function Home() {
 
         {/* 14. User Profile & VIP Membership Modal */}
         <UserProfileModal />
+
+        {/* 15. Global Search Experience Modal */}
+        <GlobalSearchModal />
       </main>
     </BookingProvider>
   );

@@ -72,6 +72,11 @@ interface BookingContextType {
   openBooking: (details?: Partial<BookingDetails>) => void;
   closeBooking: () => void;
 
+  // Search modal
+  isSearchOpen: boolean;
+  openSearch: () => void;
+  closeSearch: () => void;
+
   // My Passes wallet modal
   isMyPassesOpen: boolean;
   passes: TicketPass[];
@@ -93,6 +98,7 @@ const BookingContext = createContext<BookingContextType | undefined>(undefined);
 export function BookingProvider({ children }: { children: ReactNode }) {
   const [isOpen, setIsOpen] = useState(false);
   const [booking, setBooking] = useState<BookingDetails>(DEFAULT_BOOKING);
+  const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isMyPassesOpen, setIsMyPassesOpen] = useState(false);
   const [passes, setPasses] = useState<TicketPass[]>(INITIAL_USER_PASSES);
   const [isProfileOpen, setIsProfileOpen] = useState(false);
@@ -110,6 +116,14 @@ export function BookingProvider({ children }: { children: ReactNode }) {
 
   const closeBooking = useCallback(() => {
     setIsOpen(false);
+  }, []);
+
+  const openSearch = useCallback(() => {
+    setIsSearchOpen(true);
+  }, []);
+
+  const closeSearch = useCallback(() => {
+    setIsSearchOpen(false);
   }, []);
 
   const openMyPasses = useCallback(() => {
@@ -143,6 +157,9 @@ export function BookingProvider({ children }: { children: ReactNode }) {
         booking,
         openBooking,
         closeBooking,
+        isSearchOpen,
+        openSearch,
+        closeSearch,
         isMyPassesOpen,
         passes,
         openMyPasses,
